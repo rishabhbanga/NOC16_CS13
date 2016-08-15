@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rishabhbanga.primalityapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/textView1"
+        android:layout_marginTop="72dp"
+        android:text="@string/question_string_1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/random_number"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="145dp"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+        android:text="@string/question_string_2"
+        android:layout_below="@+id/random_number"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:text="True"
+        android:textStyle="bold"
+        android:id="@+id/btntrue"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="75dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="44dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:text="False"
+        android:textStyle="bold"
+        android:id="@+id/btnfalse"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/btntrue"
+        android:layout_toRightOf="@+id/btntrue"
+        android:layout_toEndOf="@+id/btntrue"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:text="Next"
+        android:textStyle="bold"
+        android:id="@+id/btnnext"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/btntrue"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Primality App</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="question_string_1">Is the number</string>
+    <string name="question_string_2">a Prime Number?</string>
+</resources>
