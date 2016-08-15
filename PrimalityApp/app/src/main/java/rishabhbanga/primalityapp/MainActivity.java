@@ -25,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
         tbutton = (Button) findViewById(R.id.btntrue);
         tbutton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
-                String rand = tvnumber.getText().toString();
-                int random = Integer.parseInt(rand);
-                boolean checkPrime = isPrime(random);
+                String randomnum = tvnumber.getText().toString();
+                int number = Integer.parseInt(randomnum);
+                boolean checkPrime = isPrime(number);
 
                 if (checkPrime) {
                     Toast.makeText(MainActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
@@ -48,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                String rand = tvnumber.getText().toString();
-                int random = Integer.parseInt(rand);
-                boolean checkPrime = isPrime(random);
+                String randomnum = tvnumber.getText().toString();
+                int number = Integer.parseInt(randomnum);
+                boolean checkPrime = isPrime(number);
 
                 if (checkPrime) {
                     Toast.makeText(MainActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
